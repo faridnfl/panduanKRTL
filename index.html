@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panduan Instalasi</title>
+    <title>Panduan Instalasi KRTL</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -72,23 +72,19 @@
 
 <body>
 
-    <!-- NAVBAR -->
-    <!-- <nav class="navbar">
-    <div class="logo">
-        <img src="logo.png" alt="KILINT STORE Logo" id="navbar-logo">
-    </div>
-</nav> -->
-
     <div class="container" style="max-width: 900px; margin-top: 30px;">
 
         <h1 class="guide-title" style="margin-bottom: 30px;">KRTL by faridnfl</h1>
 
-        <!-- MENU TAB BAGIAN ATAS -->
+        <!-- MENU TAB BAGIAN ATAS (DIPERBARUI) -->
         <div class="tab-container">
             <button class="tab-button active" onclick="openTab('persiapan')">1. Persiapan</button>
             <button class="tab-button" onclick="openTab('aktivasi')">2. Aktivasi</button>
             <button class="tab-button" onclick="openTab('tambah')">3. Tambah Game</button>
-            <button class="tab-button" onclick="openTab('main')">4. Main Game</button>
+            <!-- TAB BARU -->
+            <button class="tab-button" onclick="openTab('download')">4. Download Game</button>
+            <!-- NOMOR DIPERBARUI -->
+            <button class="tab-button" onclick="openTab('main')">5. Main Game</button>
             <button class="tab-button" onclick="openTab('onlinefix')">OnlineFix / Bypass</button>
             <button class="tab-button" onclick="openTab('lainnya')">Fitur Lain</button>
         </div>
@@ -146,7 +142,7 @@
             </section>
         </div>
 
-        <!-- TAB 3: TAMBAH GAME (Update v5.2 - Clean & Consistent Design) -->
+        <!-- TAB 3: TAMBAH GAME -->
         <div id="tambah" class="tab-content">
             <section class="guide-section">
                 <h2 class="section-header">Langkah 3: Menambahkan Game</h2>
@@ -155,7 +151,6 @@
                     pilihan metode:</p>
 
                 <ol class="guide-list">
-                    <!-- METODE 1 -->
                     <li style="margin-bottom: 30px;">
                         <strong style="color: #0078d4;">Metode PIN (Manual)</strong>
                         <p style="font-size: 0.9rem; color: #aaa; margin-top: 5px;">Gunakan tab ini jika mendapatkan <strong>AppID</strong> dan <strong>PIN</strong> khusus:</p>
@@ -166,7 +161,6 @@
                         </ul>
                     </li>
 
-                    <!-- METODE 2 -->
                     <li style="margin-bottom: 30px;">
                         <strong style="color: #4caf50;">Metode Tiket (Otomatis)</strong>
                         <p style="font-size: 0.9rem; color: #aaa; margin-top: 5px;">Gunakan tab ini untuk aktivasi instan:</p>
@@ -174,88 +168,174 @@
                             <li>Masukkan <strong>AppID</strong> game yang ingin dimainkan.</li>
                             <li>Klik <strong>Tambahkan</strong>. KRTL akan otomatis memasang data game tersebut.</li>
                             <p style="color: #ff9800; font-size: 0.85rem; margin-top: 5px;">
-                                ⚠️ <strong>Sistem Tiket:</strong> Fitur ini memotong 1 Tiket setiap kali berhasil. Sisa
-                                tiket Anda terlihat di bagian bawah menu.
+                                ⚠️ <strong>Sistem Tiket:</strong> Fitur ini memotong 1 Tiket setiap kali berhasil.
                             </p>
                         </ul>
                     </li>
                 </ol>
 
-                <!-- KOTAK SELESAI (SUBTLE) -->
-                <div
-                    style="background-color: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); padding: 15px; border-radius: 8px; margin-top: 10px;">
-                    <p style="color: #4caf50; margin: 0; font-size: 0.9rem;">
-                        Setelah muncul notifikasi sukses, game akan otomatis masuk ke daftar <strong>Library
-                            Game</strong> tanpa perlu disimpan manual lagi.
-                    </p>
-                </div>
-
                 <div style="text-align: right; margin-top: 30px;">
-                    <button class="btn-contact-support" onclick="openTab('main')"
+                    <button class="btn-contact-support" onclick="openTab('download')"
                         style="width: auto; padding: 10px 25px; border-radius: 30px; font-weight: 600;">Lanjut ke Tahap
                         4 &rarr;</button>
                 </div>
             </section>
         </div>
 
-        <!-- TAB 4: MAIN GAME (Update v5.2 - Logic & Initial Setup) -->
-        <div id="main" class="tab-content">
+        <!-- TAB 4: DOWNLOAD GAME (DIPERBARUI) -->
+        <div id="download" class="tab-content">
             <section class="guide-section">
-                <h2 class="section-header">Langkah 4: Cara Bermain</h2>
+                <h2 class="section-header">Langkah 4: Download Game</h2>
+                <p style="color:#ccc; margin-bottom: 25px;">KRTL menyediakan dua metode untuk mendownload game.</p>
 
-                <!-- TAHAP WAJIB: DOWNLOAD -->
-                <div
-                    style="background-color: rgba(244, 67, 54, 0.1); border: 2px solid #f44336; padding: 15px; border-radius: 10px; margin-bottom: 25px;">
-                    <strong style="color: #f44336; font-size: 1.1rem;">⚠️ PERHATIKAN: Download File Game</strong>
-                    <p style="color: #eee; margin-top: 8px; font-size: 0.95rem; line-height: 1.5;">
-                        Sebelum menjalankan game, <strong>Perlu</strong> mendownload file gamenya melalui Steam
-                        terlebih dahulu:
-                    </p>
-                    <ol style="color: #ccc; font-size: 0.9rem; margin-top: 5px; margin-left: 15px; line-height: 1.6;">
-                        <li>Pilih game di KRTL, lalu klik <strong>Restart Steam</strong>.</li>
-                        <li>Setelah steam sudah terbuka, pergi ke <strong>Library Steam</strong> anda.</li>
-                        <li>Jika game belum muncul di daftar library Steam, <strong>Klik Kanan</strong> pada game
-                            tersebut di KRTL
-                            lalu pilih <strong>"Library Game"</strong>. Halaman install akan terbuka otomatis di
-                            Steam.</li>
-                        <li>Di aplikasi Steam, klik tombol <strong>Install</strong> dan tunggu hingga selesai.</li>
-                    </ol>
+                <!-- CARA 1: LEWAT STEAM -->
+                <div class="faq-item" style="margin-bottom: 25px; border: 1px solid #444; background: #252525; border-radius: 10px; overflow: hidden;">
+                    <div style="padding: 20px;">
+                        <h3 style="color: #0078d4; margin-top: 0; display: flex; align-items: center; gap: 10px;">
+                            <span style="background:#0078d4; color:white; width:25px; height:25px; display:inline-flex; justify-content:center; align-items:center; border-radius:50%; font-size:0.9rem;">1</span>
+                            Download Lewat Aplikasi Steam
+                        </h3>
+                        <p style="color: #aaa; font-size: 0.9rem; margin-bottom: 15px;">Metode standar, download langsung menggunakan Steam.</p>
+                        
+                        <ol style="margin-left: 20px; color: #ddd; line-height: 1.8;">
+                            <li>Buka menu <strong>Library Game</strong> di KRTL, lalu pilih game yang ingin didownload.</li>
+                            <li>Klik tombol <strong>Restart Steam</strong> di KRTL. Tunggu hingga Steam terbuka kembali.</li>
+                            <li>Buka <strong>Library</strong> di aplikasi Steam Anda.</li>
+                            <li>
+                                <strong>Penting:</strong> Jika tombol Install belum muncul di Steam:
+                                <ul style="color: #bbb; margin-top: 5px; margin-bottom: 5px;">
+                                    <li>Kembali ke KRTL, <strong>Klik Kanan</strong> pada nama game tersebut.</li>
+                                    <li>Pilih opsi <strong>"Library Game"</strong>.</li>
+                                </ul>
+                                Ini akan memicu halaman instalasi di Steam.
+                            </li>
+                            <li>Tombol <strong>Install</strong> akan muncul di Steam. Klik dan lakukan download seperti biasa.</li>
+                        </ol>
+                    </div>
                 </div>
 
-                <!-- CARA 1 -->
-                <div class="faq-item" style="margin-bottom: 20px; border: 1px solid #444; background: #252525;">
-                    <div style="padding: 15px;">
-                        <h3 style="color: #0078d4; margin-top: 0;">Cara 1: Bermain Lewat Steam (Original)</h3>
-                        <ol style="margin-left: 20px; color: #ddd; line-height: 1.7;">
+                <!-- CARA 2: LEWAT KRTL (DDM) -->
+                <div class="faq-item" style="margin-bottom: 25px; border: 1px solid #444; background: #252525; border-radius: 10px; overflow: hidden;">
+                    <div style="padding: 20px;">
+                        <h3 style="color: #4caf50; margin-top: 0; display: flex; align-items: center; gap: 10px;">
+                            <span style="background:#4caf50; color:white; width:25px; height:25px; display:inline-flex; justify-content:center; align-items:center; border-radius:50%; font-size:0.9rem;">2</span>
+                            Download Lewat KRTL
+                        </h3>
+                        <p style="color: #aaa; font-size: 0.9rem; margin-bottom: 15px;">Metode alternatif untuk download tanpa menggunakan steam.</p>
+
+                        <ol style="margin-left: 20px; color: #ddd; line-height: 1.8;">
                             <li>Buka menu <strong>Library Game</strong> di KRTL.</li>
-                            <li>Pilih judul game yang ingin dimainkan.</li>
-                            <li>Klik tombol <strong>Restart Steam</strong>.</li>
-                            <li>Setelah Steam terbuka, klik tombol <strong>Play</strong> di dalam Steam.</li>
+                            <li><strong>Klik Kanan</strong> pada judul game, lalu pilih <strong>"DDM"</strong>.</li>
+                            <li>
+                                Klik <strong>Browse</strong> untuk memilih lokasi penyimpanan.
+                                <br><span style="color: #ff9800; font-size: 0.85rem;">*Tips: Disarankan membuat folder baru dengan nama yang sesuai dengan gamenya.</span>
+                            </li>
+                            <li>Klik tombol <strong>START DOWNLOAD</strong> untuk memulai proses.</li>
                         </ol>
-                        <!-- INFO PENTING: LISENSI TERTARGET -->
-                        <div
-                            style="background-color: rgba(255, 152, 0, 0.1); border-left: 4px solid #ff9800; padding: 10px; margin-top: 15px; font-size: 0.9rem;">
-                            <p style="color: #ff9800; margin: 0;"><strong>💡 Info Penting:</strong><br>
-                                Hanya game yang Anda pilih di KRTL sebelum menekan <strong>Restart Steam</strong> yang
-                                bisa dimnainkan. Game lain akan tetap muncul sebagai <em>"Purchase"</em>. Jika
-                                ingin ganti game, ulangi proses pilih game dan restart steam di KRTL.</p>
+
+                        <!-- INFO RESUME DOWNLOAD -->
+                        <div style="background: rgba(76, 175, 80, 0.1); border-left: 4px solid #4caf50; padding: 15px; margin-top: 20px; border-radius: 5px;">
+                            <strong style="color: #4caf50;">💡 Fitur Resume (Lanjut Download)</strong>
+                            <p style="color: #ddd; margin-top: 8px; font-size: 0.95rem; line-height: 1.5;">
+                                Download via KRTL bisa dijeda atau dibatalkan kapan saja (Tombol Batal). Untuk melanjutkan:
+                            </p>
+                            <ul style="color: #ccc; margin-left: 20px; margin-top: 5px; font-size: 0.9rem;">
+                                <li>Ulangi langkah di atas (Klik Kanan -> DDM).</li>
+                                <li><strong>WAJIB:</strong> Pilih folder tujuan yang <strong>SAMA PERSIS</strong> dengan sebelumnya.</li>
+                                <li>KRTL akan memverifikasi file yang sudah ada dan hanya mendownload sisanya.</li>
+                                <li style="color: #f44336;"><em>Jika Anda memilih folder berbeda, download akan dimulai dari 0% lagi.</em></li>
+                            </ul>
+                        </div>
+
+                        <!-- FITUR BACKGROUND MODE -->
+                        <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #444;">
+                            <strong style="color: #00d2ff; font-size: 0.95rem;">🚀 Background Mode</strong>
+                            <ul style="color: #aaa; margin-left: 20px; margin-top: 5px; font-size: 0.9rem;">
+                                <li>Klik tombol <strong>Hide</strong> agar download berjalan di latar belakang.</li>
+                                <li>Cek progress lewat tombol <strong>Menu (≡)</strong> -> <strong>"⬇ Download"</strong>.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
-                <!-- CARA 2 -->
-                <div class="faq-item" style="margin-bottom: 20px; border: 1px solid #444; background: #252525;">
-                    <div style="padding: 15px;">
-                        <h3 style="color: #4caf50; margin-top: 0;">Cara 2: Bermain Langsung (Direct Play)</h3>
-                        <p style="color: #aaa; font-size: 0.85rem;">*Cara ini memungkinkan Anda membuka game tanpa masuk
-                            ke aplikasi Steam lagi.</p>
-                        <ol style="margin-left: 20px; color: #ddd; line-height: 1.7;">
-                            <li><strong>Klik Kanan</strong> pada judul game di daftar KRTL.</li>
-                            <li>Pilih menu <strong>Play</strong> -> <strong>Tentukan .exe</strong>.</li>
-                            <li>Cari dan pilih file utama game (file <code>.exe</code> di folder instalasi).</li>
-                            <li>Setelah terdaftar, Anda cukup <strong>Klik Kanan gamenya di library KRTL</strong> ->
-                                <strong>Play</strong> ->
-                                <strong>Play</strong> untuk membuka game secara instan.
+                <div style="text-align: right; margin-top: 20px;">
+                    <button class="btn-contact-support" onclick="openTab('main')"
+                        style="width: auto; padding: 12px 25px; border-radius: 30px; font-weight: bold;">Lanjut ke Tahap 5 &rarr;</button>
+                </div>
+            </section>
+        </div>
+
+       <!-- TAB 5: MAIN GAME (DIPERBARUI TOTAL) -->
+        <div id="main" class="tab-content">
+            <section class="guide-section">
+                <h2 class="section-header">Langkah 5: Cara Bermain</h2>
+                <p style="color:#ccc; margin-bottom: 25px;">Metode bermain tergantung dari mana Anda mendownload game tersebut (Via Steam atau Via KRTL).</p>
+
+                <!-- KATEGORI A: SUMBER STEAM -->
+                <div class="faq-item" style="margin-bottom: 25px; border: 1px solid #444; background: #252525; border-radius: 10px; overflow: hidden;">
+                    <div style="padding: 20px;">
+                        <h3 style="color: #0078d4; margin-top: 0; border-bottom: 1px solid #444; padding-bottom: 10px;">
+                            A. Jika Game Didownload dari Steam
+                        </h3>
+                        
+                        <!-- Opsi 1 -->
+                        <div style="margin-top: 15px;">
+                            <strong style="color: #fff;">Opsi 1: Main Lewat Launcher Steam (Standar)</strong>
+                            <ol style="margin-left: 20px; color: #bbb; line-height: 1.6; font-size: 0.9rem;">
+                                <li>Buka menu <strong>Library Game</strong> di KRTL -> Pilih Game.</li>
+                                <li>Klik tombol <strong>Restart Steam</strong>.</li>
+                                <li>Setelah Steam terbuka, masuk ke Library Steam.</li>
+                                <li>Pilih gamenya lalu klik tombol <strong>Play</strong> di Steam.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Opsi 2 -->
+                        <div style="margin-top: 20px; padding-top: 15px; border-top: 1px dashed #555;">
+                            <strong style="color: #4caf50;">Opsi 2: Direct Play (Tanpa Buka Steam UI)</strong>
+                            <p style="color: #888; font-size: 0.85rem; margin-top: 5px;">*Gunakan cara ini untuk membuka game lebih cepat lewat KRTL.</p>
+                            <ol style="margin-left: 20px; color: #bbb; line-height: 1.6; font-size: 0.9rem;">
+                                <li>Di KRTL, <strong>Klik Kanan</strong> gamenya -> Pilih menu <strong>Play</strong> -> <strong>Tentukan .exe</strong>.</li>
+                                <li>Cari file <code>.exe</code> game di folder instalasi Steam.
+                                    <br><span style="color:#0078d4;">(Biasanya di: <code>Steam\steamapps\common\NamaGame</code>)</span>.
+                                </li>
+                                <li>Setelah ditentukan, mainkan dengan cara: <strong>Klik Kanan</strong> -> <strong>Play</strong> -> <strong>Play</strong>.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KATEGORI B: SUMBER KRTL -->
+                <div class="faq-item" style="margin-bottom: 25px; border: 1px solid #444; background: #252525; border-radius: 10px; overflow: hidden;">
+                    <div style="padding: 20px;">
+                        <h3 style="color: #e67e22; margin-top: 0; border-bottom: 1px solid #444; padding-bottom: 10px;">
+                            B. Jika Game Didownload dari KRTL
+                        </h3>
+                        <p style="color: #aaa; font-size: 0.9rem;">Karena game didownload terpisah (Portable/Standalone), Anda <strong>WAJIB</strong> mengatur Emulator (Goldberg) agar game bisa jalan tanpa Steam.</p>
+
+                        <ol style="margin-left: 20px; color: #ddd; line-height: 1.8;">
+                            <li>
+                                <strong>Tentukan File .exe</strong>
+                                <ul style="color: #bbb; font-size: 0.9rem;">
+                                    <li><strong>Klik Kanan</strong> gamenya -> <strong>Play</strong> -> <strong>Tentukan .exe</strong>.</li>
+                                    <li>Arahkan ke folder tempat Anda mendownload game tadi via KRTL.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Pasang Emulator (WAJIB)</strong>
+                                <div style="background: rgba(230, 126, 34, 0.1); border-left: 3px solid #e67e22; padding: 10px; margin: 5px 0;">
+                                    <ul style="margin: 0; padding-left: 20px; color: #ccc; font-size: 0.9rem;">
+                                        <li><strong>Klik Kanan</strong> gamenya -> Pilih <strong>Goldberg Setting</strong>.</li>
+                                        <li>Isi kolom <strong>EXE Game</strong> (file yang tadi dipilih).</li>
+                                        <li>Isi kolom <strong>Steam API</strong> (Cari file <code>steam_api.dll</code> atau <code>steam_api64.dll</code> di folder game).</li>
+                                        <li>Klik tombol <strong>Apply Goldberg</strong> dan tunggu notifikasi sukses.</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <strong>Mainkan Game</strong>
+                                <ul style="color: #bbb; font-size: 0.9rem;">
+                                    <li><strong>Klik Kanan</strong> gamenya -> <strong>Play</strong> -> <strong>Play</strong>.</li>
+                                </ul>
                             </li>
                         </ol>
                     </div>
@@ -269,12 +349,12 @@
             </section>
         </div>
 
-        <!-- TAB: ONLINEFIX / BYPASS (Update v5.2) -->
+        <!-- TAB: ONLINEFIX / BYPASS -->
         <div id="onlinefix" class="tab-content">
             <section class="guide-section">
                 <h2 class="section-header">Langkah: Menggunakan OnlineFix / Bypass</h2>
                 <p style="color:#ccc; margin-bottom: 20px;">Gunakan fitur ini jika game yang dimainkan membutuhkan
-                    akses <strong>Multiplayer</strong> atau bypass keamanan tambahan (seperti Denuvo).</p>
+                    akses <strong>Multiplayer</strong> atau bypass keamanan tambahan.</p>
 
                 <ol class="guide-list">
                     <li>
@@ -290,18 +370,12 @@
                     </li>
                     <li>
                         <strong>Tentukan Folder Game</strong>
-                        <p>Klik tombol <strong>Browse</strong>, lalu arahkan ke lokasi folder instalasi game tersebut
-                            (Contoh: <code>steamapps/common/...</code>).</p>
+                        <p>Klik tombol <strong>Browse</strong>, lalu arahkan ke lokasi folder instalasi game tersebut.</p>
                     </li>
                     <li>
                         <strong>Proses Patching</strong>
                         <p>Klik tombol <strong>PATCH GAME</strong>. Tool akan otomatis mendownload file bypass terbaru
                             dan memasangnya langsung ke folder game Anda.</p>
-                    </li>
-                    <li>
-                        <strong>Selesai</strong>
-                        <p>Tunggu hingga muncul notifikasi <em>"Sukses"</em>. Setelah itu, Anda dapat menjalankan game
-                            secara normal melalui Steam atau menggunakan fitur Direct Play.</p>
                     </li>
                 </ol>
 
@@ -313,7 +387,7 @@
             </section>
         </div>
 
-        <!-- TAB 5: FITUR LAIN (Update v5.2 - Elegant UI Design) -->
+        <!-- TAB 6: FITUR LAIN -->
         <div id="lainnya" class="tab-content">
             <section class="guide-section" style="background: transparent; border: none; padding: 0;">
                 <h2 class="section-header" style="color: #00d2ff; margin-bottom: 10px;">Fitur lainnya</h2>
@@ -333,17 +407,14 @@
                             <h3 style="color: #fff; margin: 0;">Goldberg Setting</h3>
                         </div>
                         <p style="color: #aaa; line-height: 1.6; margin-bottom: 15px;">
-                            Ubah game menjadi <strong>Standalone</strong>..
+                            Ubah game menjadi <strong>Standalone</strong> (Offline tanpa Steam).
                         </p>
                         <div
                             style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 10px; border-left: 3px solid #0078d4;">
-                            <p style="color: #ccc; margin-bottom: 8px; font-weight: 600;">Tahap
-                                Penggunaan:</p>
                             <ul style="color: #999; margin: 0; padding-left: 18px; line-height: 1.5;">
                                 <li>Pilih <strong>Goldberg Setting</strong> pada menu klik kanan game.</li>
-                                <li>Tentukan file utama (<code>.exe</code>) melalui tombol Browse pertama.</li>
-                                <li>Tentukan file <code>steam_api</code> melalui tombol Browse kedua.</li>
-                                <li>Klik <strong>Apply Goldberg</strong> untuk memproses emulator.</li>
+                                <li>Tentukan file utama (<code>.exe</code>) dan <code>steam_api</code>.</li>
+                                <li>Klik <strong>Apply Goldberg</strong>.</li>
                             </ul>
                         </div>
                     </div>
@@ -359,16 +430,14 @@
                             <h3 style="color: #fff; margin: 0; ">Steamless (Remove DRM)</h3>
                         </div>
                         <p style="color: #aaa; line-height: 1.6; margin-bottom: 15px;">
-                            Membantu memperbaiki game yang gagal terbuka.
+                            Membantu memperbaiki game yang gagal terbuka karena proteksi Steam Stub.
                         </p>
                         <div
                             style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 10px; border-left: 3px solid #e67e22;">
-                            <p style="color: #ccc; margin-bottom: 8px; font-weight: 600;">Tahap
-                                Penggunaan:</p>
                             <ul style="color: #999; margin: 0; padding-left: 18px; line-height: 1.5;">
                                 <li>Pilih <strong>Steamless</strong> pada menu klik kanan game.</li>
                                 <li>Browse dan pilih file <code>.exe</code> utama yang ingin diperbaiki.</li>
-                                <li>Klik <strong>Apply Remove DRM</strong> dan tunggu hingga selesai.</li>
+                                <li>Klik <strong>Apply Remove DRM</strong>.</li>
                             </ul>
                         </div>
                     </div>
@@ -376,10 +445,6 @@
             </section>
         </div>
     </div>
-
-    <!-- <footer>
-    <p>&copy; 2025 Kilint Store</p>
-</footer> -->
 
     <script>
         function openTab(tabName) {
@@ -400,7 +465,6 @@
             document.getElementById(tabName).classList.add("active");
 
             // 4. Nyalakan tombol yang diklik
-            // Cari tombol yang memiliki onclick='openTab("tabName")'
             var buttons = document.querySelectorAll(`button[onclick="openTab('${tabName}')"]`);
             if (buttons.length > 0) {
                 buttons[0].classList.add("active");
